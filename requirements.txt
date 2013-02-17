@@ -1,0 +1,14 @@
+Django==1.4.3
+# PIL==1.1.7
+# South==0.7.6
+
+# -e git+https://github.com/krvss/django-social-auth.git#egg=django-social-auth
+# django-profiles==0.2
+
+# celery==3.0.13
+# celery-with-redis==3.0
+# django-celery==3.0.11
+# redis==2.7.2
+
+
+
