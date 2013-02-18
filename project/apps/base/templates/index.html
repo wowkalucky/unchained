@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block maincontent %}
+
+<!-- Masthead
+================================================== -->
+      <header class="jumbotron subhead" id="overview">
+        <div class="row">
+          <div class="span6 headleft">
+            <h1>1988</h1>
+            <p></p>
+            <p class="lead">Когда люди были маленькими...</p>
+          </div>
+          <div class="span6">
+
+              {% block content %}
+
+              {% endblock content %}
+
+          </div>
+        </div>
+
+      </header>
+
+
+{% endblock maincontent %}

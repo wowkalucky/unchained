@@ -2,7 +2,6 @@
 
 # Django settings for project PROJECT.
 import os
-from auth_settings import *
 
 # relative project path
 rel = lambda *x: os.path.join(os.path.dirname(os.path.abspath(__file__)), *x)
@@ -21,7 +20,7 @@ DATABASES = {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'ENGINE': 'django.db.backends.sqlite3',
         # Or path to database file if using sqlite3.
-        'NAME': rel(db.db),
+        'NAME': rel('db.db'),
         # Not used with sqlite3.
         'USER': '',
         # Not used with sqlite3.
@@ -144,6 +143,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'project.apps.base',
 )
 
 # A sample logging configuration. The only tangible logging
